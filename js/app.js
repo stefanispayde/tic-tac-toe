@@ -4,3 +4,5 @@ $(document).ready(function() {
   // goes inside this function
 
 });
+
+alert("JS up and running");
