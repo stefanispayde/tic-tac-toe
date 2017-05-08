@@ -22,10 +22,12 @@
 }
 h1 {
   font-family: 'Jura', sans-serif;
-  font-size: 40px;
+  font-size: 50px;
   font-weight: 700;
 }
 
 #info {
   font-family: 'Jura', sans-serif;
+  font-weight: 400;
+  font-size: 30px;
 }
