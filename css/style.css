@@ -1,5 +1,5 @@
 #board {
-  margin-top: 10px;
+  margin-top: 0;
 }
 
 .box {
@@ -24,10 +24,12 @@ h1 {
   font-family: 'Jura', sans-serif;
   font-size: 50px;
   font-weight: 700;
+  margin: auto;
 }
 
 #info {
   font-family: 'Jura', sans-serif;
   font-weight: 400;
   font-size: 30px;
+  margin: 0 auto;
 }

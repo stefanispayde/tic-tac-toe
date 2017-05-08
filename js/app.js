@@ -79,6 +79,7 @@ $(document).ready(function() {
         $("#info").text("New game!");
     } else if (addMove == 8) {
         console.log("CAT! Be more aggressive next round.");
+        $("#info").text("New game!");
     }
   };
   //reset button
