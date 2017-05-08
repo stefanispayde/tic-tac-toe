@@ -8,7 +8,8 @@
 
     <!-- Bootstrap CSS from CDN -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
+    <!-- link to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Jura:300" rel="stylesheet">
     <!-- link to custom stylesheet (always require after Bootstrap) -->
     <link rel="stylesheet" href="css/style.css" media="screen" title="no title" charset="utf-8">
     <!-- jQuery from CDN -->
@@ -18,18 +19,17 @@
 
 
     <title>Tic Tac Toe</title>
-    <!-- <script>
-    $(document).ready(function(){
-    $(":reset").css("background-color", "blue");
-    });
-</script> -->
+
   </head>
   <body>
-    <!-- <img src="board.png" width="300px" alt="empty tic tac toe board"> -->
     <div class="container">
       <div class="row text-center">
         <div class="col-md-12">
           <h1>Tic Tac Toe</h1>
+          <hr>
+        </div>
+        <div class="col-md-12">
+          <h3 id="info">X, go first!</h3>
           <hr>
         </div>
       </div>
@@ -37,44 +37,38 @@
 
         <!-- a column represents our game board -->
         <!-- the `offset` class helps us center the board -->
-        <div class="col-md-6 col-md-offset-3" id="board">
+        <!-- <div class="col-md-6 col-md-offset-3" id="board"> -->
 
-          <!-- you can put rows inside of columns! -->
-          <!-- Bootstrap subdivides these 'nested' rows into 12 columns, too! -->
+          <div class="col-md-6 col-md-offset-3" id="board">
+
           <div class="row">
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
+            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box"></div>
           </div>
 
           <div class="row">
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
+            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box"></div>
           </div>
 
           <div class="row">
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
-            <div class="col-md-4 box"></div>
+            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box"></div>
+            <div class="col-xs-4 box"></div>
           </div>
         </div>
       </div>
     </div>
 
-<button class="btn btn-danger" type="reset">Reset</button>
-    <!-- <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary" autocomplete="off">RESET</button> -->
 
-  <!-- <script>
-  $('#myButton').on('click', function () {
-    var $btn = $(this).button('loading')
-    // business logic...
-    $btn.button('reset')
-  })
-  </script> -->
+    <div class="player1"></div>
+    <div class="player2"></div>"
+    <div class="win"></div>
 
-  <!-- <form action="">
-    <input type="reset" value="Reset">
-  </form> -->
+    <button type="button" id="myButton" data-loading-text="Loading..." class="btn btn-primary reset" autocomplete="off">RESET</button>
+
+
   </body>
 </html>

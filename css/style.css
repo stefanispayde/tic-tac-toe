@@ -6,7 +6,26 @@
   border: 1px solid black;
   height: 150px;
 }
-.btn btn-danger {
-  display: inline-block;
-  position: absolute;
+#myButton {
+  margin: 50px 0 0 600px;
+}
+
+.player1 {
+  background-image: url("https://cdn0.iconfinder.com/data/icons/octicons/1024/x-48.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.player2 {
+  background-image: url("https://cdn1.iconfinder.com/data/icons/material-core/20/check-circle-outline-blank-48.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+h1 {
+  font-family: 'Jura', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#info {
+  font-family: 'Jura', sans-serif;
 }
