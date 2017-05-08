@@ -16,7 +16,7 @@ $(document).ready(function() {
       $(this).addClass(currentPlayer);
       console.log("New click!");
       switchItUp();
-      checkWin();
+      whoWon();
       addMove++;
     }
 
@@ -31,39 +31,39 @@ $(document).ready(function() {
     }
   });
 
-  function checkWin (){
-    if ( $('#1').hasClass('playerOne') &&  $('#2').hasClass('playerOne') && $('#3').hasClass('playerOne') ){
+  function whoWon (){
+    if ( $('#1').hasClass('player1') &&  $('#2').hasClass('player1') && $('#3').hasClass('player1') ){
       $('#1').addClass('win') && $('#2').addClass('win') && $('#3').addClass('win');
-      alert('Player 1 is the winner!!');
-    } else if ( $('#4').hasClass('playerOne') &&  $('#5').hasClass('playerOne') && $('#6').hasClass('playerOne') ){
+      console.log('Player 1 is the winner!!');
+    } else if ( $('#4').hasClass('player1') &&  $('#5').hasClass('player1') && $('#6').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#7').hasClass('playerOne') &&  $('#8').hasClass('playerOne') && $('#9').hasClass('playerOne') ){
+    } else if ( $('#7').hasClass('player1') &&  $('#8').hasClass('player1') && $('#9').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#1').hasClass('playerOne') &&  $('#4').hasClass('playerOne') && $('#7').hasClass('playerOne') ){
+    } else if ( $('#1').hasClass('player1') &&  $('#4').hasClass('player1') && $('#7').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#2').hasClass('playerOne') &&  $('#5').hasClass('playerOne') && $('#8').hasClass('playerOne') ){
+    } else if ( $('#2').hasClass('player1') &&  $('#5').hasClass('player1') && $('#8').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#3').hasClass('playerOne') &&  $('#6').hasClass('playerOne') && $('#9').hasClass('playerOne') ){
+    } else if ( $('#3').hasClass('player1') &&  $('#6').hasClass('player1') && $('#9').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#1').hasClass('playerOne') &&  $('#5').hasClass('playerOne') && $('#9').hasClass('playerOne') ){
+    } else if ( $('#1').hasClass('player1') &&  $('#5').hasClass('player1') && $('#9').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#3').hasClass('playerOne') &&  $('#5').hasClass('playerOne') && $('#7').hasClass('playerOne') ){
+    } else if ( $('#3').hasClass('player1') &&  $('#5').hasClass('player1') && $('#7').hasClass('player1') ){
         alert('Player 1 is the winner!!');
-    } else if ( $('#4').hasClass('playerTwo') &&  $('#5').hasClass('playerTwo') && $('#6').hasClass('playerTwo') ){
+    } else if ( $('#4').hasClass('player2') &&  $('#5').hasClass('player2') && $('#6').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if ( $('#7').hasClass('playerTwo') &&  $('#8').hasClass('playerTwo') && $('#9').hasClass('playerTwo') ){
+    } else if ( $('#7').hasClass('player2') &&  $('#8').hasClass('player2') && $('#9').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if ( $('#1').hasClass('playerTwo') &&  $('#4').hasClass('playerTwo') && $('#7').hasClass('playerTwo') ){
+    } else if ( $('#1').hasClass('player2') &&  $('#4').hasClass('player2') && $('#7').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if ( $('#2').hasClass('playerTwo') &&  $('#5').hasClass('playerTwo') && $('#8').hasClass('playerTwo') ){
+    } else if ( $('#2').hasClass('player2') &&  $('#5').hasClass('player2') && $('#8').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if ( $('#3').hasClass('playerTwo') &&  $('#6').hasClass('playerTwo') && $('#9').hasClass('playerTwo') ){
+    } else if ( $('#3').hasClass('player2') &&  $('#6').hasClass('player2') && $('#9').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if ( $('#1').hasClass('playerTwo') &&  $('#5').hasClass('playerTwo') && $('#9').hasClass('playerTwo') ){
+    } else if ( $('#1').hasClass('player2') &&  $('#5').hasClass('player2') && $('#9').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if ( $('#3').hasClass('playerTwo') &&  $('#5').hasClass('playerTwo') && $('#7').hasClass('playerTwo') ){
+    } else if ( $('#3').hasClass('player2') &&  $('#5').hasClass('player2') && $('#7').hasClass('player2') ){
         alert('Player 2 is the winner!!');
-    } else if (moveCount === 8) {
+    } else if (addMove === 8) {
         alert("It's a draw!");
     }
   };
