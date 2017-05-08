@@ -33,53 +33,37 @@ $(document).ready(function() {
   function whoWon (){
     if ( $('#1').hasClass('player1') &&  $('#2').hasClass('player1') && $('#3').hasClass('player1') ){
       $('#1').addClass('win') && $('#2').addClass('win') && $('#3').addClass('win');
-      console.log('Player 1 is the winner!!');
-      $("#info").text("New game!");
+      $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#4').hasClass('player1') &&  $('#5').hasClass('player1') && $('#6').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#7').hasClass('player1') &&  $('#8').hasClass('player1') && $('#9').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+      $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#1').hasClass('player1') &&  $('#4').hasClass('player1') && $('#7').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#2').hasClass('player1') &&  $('#5').hasClass('player1') && $('#8').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#3').hasClass('player1') &&  $('#6').hasClass('player1') && $('#9').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#1').hasClass('player1') &&  $('#5').hasClass('player1') && $('#9').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#3').hasClass('player1') &&  $('#5').hasClass('player1') && $('#7').hasClass('player1') ){
-        console.log('Player 1 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 1 is the winner! New game!");
     } else if ( $('#4').hasClass('player2') &&  $('#5').hasClass('player2') && $('#6').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
     } else if ( $('#7').hasClass('player2') &&  $('#8').hasClass('player2') && $('#9').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
     } else if ( $('#1').hasClass('player2') &&  $('#4').hasClass('player2') && $('#7').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
     } else if ( $('#2').hasClass('player2') &&  $('#5').hasClass('player2') && $('#8').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
     } else if ( $('#3').hasClass('player2') &&  $('#6').hasClass('player2') && $('#9').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
     } else if ( $('#1').hasClass('player2') &&  $('#5').hasClass('player2') && $('#9').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
     } else if ( $('#3').hasClass('player2') &&  $('#5').hasClass('player2') && $('#7').hasClass('player2') ){
-        console.log('Player 2 is the winner!!');
-        $("#info").text("New game!");
-    } else if (addMove == 8) {
-        console.log("CAT! Be more aggressive next round.");
-        $("#info").text("New game!");
+        $("#info").text("Player 2 is the winner! New game!");
+    } else if (addMove === 8) {
+        $("#info").text("CAT! Be more aggressive next round!");
     }
   };
   //reset button
