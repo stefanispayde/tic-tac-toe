@@ -5,7 +5,7 @@ body {
   background-repeat: no-repeat;
 }
 #board {
-  margin-top: 0;
+  margin-top: -20px;
 }
 .box {
   border: 1px solid black;
@@ -30,7 +30,6 @@ h1 {
   font-family: 'Jura', sans-serif;
   font-size: 50px;
   font-weight: 700;
-  margin: auto;
 }
 hr {
     border: none;
@@ -51,3 +50,18 @@ hr {
   background: white;
   width: 66%;
 }*/
+footer {
+  font-family: 'Jura', sans-serif;
+  color: gray;
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  margin-left: 15px;
+
+}
+a {
+  font-family: 'Jura', sans-serif;
+  font-weight: 600;
+  color: gray;
+  font-size: 25px;
+}
