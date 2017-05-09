@@ -63,7 +63,7 @@ $(document).ready(function() {
     } else if ( $('#3').hasClass('player2') &&  $('#5').hasClass('player2') && $('#7').hasClass('player2') ){
         $("#info").text("Player 2 is the winner! New game!");
     } else if (addMove === 8) {
-        $("#info").text("CAT! Be more aggressive next round!");
+        $("#info").text("Draw! Be more aggressive next round!");
     }
   };
   //reset button

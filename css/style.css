@@ -1,14 +1,19 @@
+body {
+  background-image: url("http://www.talonx.com/file/2013/09/polyagonal-web-design.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #board {
   margin-top: 0;
 }
-
 .box {
   border: 1px solid black;
   height: 150px;
 }
 #myButton {
-  margin: 50px 0 0 600px;
-}
+  margin: 10px 0 0 600px;
+  }
 
 .player1 {
   background-image: url("https://cdn0.iconfinder.com/data/icons/octicons/1024/x-48.png");
@@ -26,6 +31,12 @@ h1 {
   font-weight: 700;
   margin: auto;
 }
+hr {
+    border: none;
+    height: 1px;
+    color: black;
+    background-color: black;
+}
 
 #info {
   font-family: 'Jura', sans-serif;
@@ -33,3 +44,9 @@ h1 {
   font-size: 30px;
   margin: 0 auto;
 }
+/*.btn btn-primary btn-md {
+  position: absolute;
+  margin: auto;
+  background: white;
+  width: 66%;
+}*/
